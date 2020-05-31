@@ -16,17 +16,17 @@ if(img.data[i]+img.data[i+1]+img.data[i+2]==255*3)
 	if((i%img.step)<(img.step/3))
 	{
 	srv.request.linear_x = 0;
-	srv.request.angular_z = 0.1;
+	srv.request.angular_z = 0.5;
 	}
 	else{
         if((i%img.step)>=(2*img.step/3))
 	{
 	srv.request.linear_x = 0;
-	srv.request.angular_z = -0.1;
+	srv.request.angular_z = -0.5;
 	}
 	else
 	{
-	srv.request.linear_x = 0.1 ;
+	srv.request.linear_x = 0.5 ;
 	srv.request.angular_z = 0;
 	}
            }
