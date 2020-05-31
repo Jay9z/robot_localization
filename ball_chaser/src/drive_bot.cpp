@@ -10,8 +10,7 @@ geometry_msgs::Twist motor_command;
 motor_command.linear.x = req.linear_x;
 motor_command.angular.z = req.angular_z;
 motor_command_publisher.publish(motor_command);
-ros::Duration(3).sleep();
-
+//ros::Duration(3).sleep();
 res.msg_feedback="set x: "+ std::to_string(req.linear_x)+" angular z: "+std::to_string(req.angular_z);
 ROS_INFO_STREAM(res.msg_feedback);
 

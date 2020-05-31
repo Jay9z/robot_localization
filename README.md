@@ -10,6 +10,7 @@ a robot with camera and lidar, which is chasing a white ball in a room
     catkin_init_workspace
     git clone -b chase_ball https://github.com/Jay9z/building_a_robot.git code
     mv code/* ./
+    cd ..
     catkin_make
 
 ## How to use it
@@ -24,9 +25,3 @@ open a new terminal
     cd <workspace_name>
     source devel/setup.bash
     roslaunch ball_chaser ball_chaser.launch
-
-open another terminal
-
-    cd <workspace_name>
-    source devel/setup.bash
-    rosrun ball_chaser process_image  
