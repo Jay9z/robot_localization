@@ -6,11 +6,10 @@ a robot with camera and lidar, which is chasing a white ball in a room
 
 ## Install
     mkdir -p <workspace_name>/src
-    cd <workspace_name>
+    cd <workspace_name>/src
     catkin_init_workspace
-    cd src
-    git clone -b chase_ball https://github.com/Jay9z/building_a_robot.git ./
-    cd ..
+    git clone -b chase_ball https://github.com/Jay9z/building_a_robot.git code
+    mv code/* ./
     catkin_make
 
 ## How to use it
