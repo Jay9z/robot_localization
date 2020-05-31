@@ -8,9 +8,10 @@ ros::ServiceClient client;
 void process_image_callback(const sensor_msgs::Image img)
 {
 ball_chaser::DriveToTarget srv;
-for(int i=0;i<img.height*img.step;i++)
+//std::cout<<img.height<<img.width<<img.step<<std::endl;
+for(int i=0;i<img.height*img.step;i+=3)
 {
-if(img.data[i]==255)
+if(img.data[i]+img.data[i+1]+img.data[i+2]==255*3)
     {
 	if((i%img.step)<(img.step/3))
 	{
