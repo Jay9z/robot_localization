@@ -22,16 +22,17 @@
 <!-- param name="initial_pose_a" value="-1.57" / -->
 <!-- filter model -->
 <param name="update_min_d" value="0.1" />
-<param name="update_min_a" value="0.2" />
+<param name="update_min_a" value="0.1" />
 <!-- odom model -->
 <param name="odom_model_type" value="diff-corrected" />
-<param name="odom_alpha1" value="0.1"/>
-<param name="odom_alpha2" value="0.1"/>
-<param name="odom_alpha3" value="0.1"/>
-<param name="odom_alpha4" value="0.1"/>
+<param name="odom_alpha1" value="0.005"/>
+<param name="odom_alpha2" value="0.005"/>
+<param name="odom_alpha3" value="0.002"/>
+<param name="odom_alpha4" value="0.002"/>
 <!-- laser model -->
 <param name="laser_max_beams" value="40" />
-<param name="laser_sigma_hit" value="0.1" />
+<param name="laser_sigma_hit" value="0.01" />
+<param name="laser_min_range" value="0.0" />
 
 
 </node>
