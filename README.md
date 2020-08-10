@@ -1,17 +1,16 @@
-# Build A Robot
-A Platform software for industrial application, such as smart welding, auto grinding
+Robot localization
 
 ## Introduction
-a robot with camera and lidar, which is chasing a white ball in a room
+a robot with camera and lidar, which can localize robot pose by AMCL algorithm.
 
 ## Pre-requisites
-1. ROS
+1. ROS-kinectic
 
 ## Install
     mkdir -p <workspace_name>/src
     cd <workspace_name>/src
     catkin_init_workspace
-    git clone https://github.com/Jay9z/building_a_robot.git code
+    git clone https://github.com/Jay9z/robot_localization.git code
     mv code/* ./
     cd ..
     catkin_make
